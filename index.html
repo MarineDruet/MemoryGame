@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Jeu de paires</title>
+    <link href="https://fonts.googleapis.com/css?family=Ramabhadra" rel="stylesheet">
+    <link href="style.css" type="text/css" rel="stylesheet" />
+    <script type="text/javascript" src="JeuPaires.js"></script>
+</head>
+
+<body onload="Jeu.main()">
+
+    <header>
+        <h1>Jeu de Paires !</h1>
+        <p>Meilleur score :
+            <span id="score">0</span> clicks !
+            <br>Temps écoulé : <span id="chrono">0</span> secondes, meilleur temps : <span id="topchrono">0</span> secondes</p>
+    </header>
+
+    <section>
+        <div id="bouton" onclick="Jeu.resetPartie()">Recommencer</div>
+        <div id="jeu">
+            <div id="zoneImage"></div>
+        </div>
+
+    </section>
+
+</body>
+
+</html>
